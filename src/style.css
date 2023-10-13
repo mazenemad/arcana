@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    background: linear-gradient(to right, #104EFF, #00E0FF) !important;
+
+}
+
+.webgl
+{
+    /* background: linear-gradient(to right, #104EFF, #00E0FF); */
+    background-color: #101011;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    outline: none;
+}
+.loader{
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:first baseline;
+    gap: 25px;
+    background-color: transparent;
+}
+@media (min-width: 640px) {
+    .container h1{
+        font-size: 2rem;
+    }
+}
+.container p{
+    margin-bottom: 4rem;
+font-size: 1.2rem;
+color: white;
+width: 400px;
+}
+.container h1{
+    font-size: 4rem;
+    color: #71EEFF;
+    font-weight: bold;
+    margin-bottom: 2rem; 
+    width: 400px;
+}
+.logo{
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 150px;
+    height: 100px;
+    background-image: url("./logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
